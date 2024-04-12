@@ -1,0 +1,24 @@
+body{
+    background-image: linear-gradient(to bottom, white 0%, lightblue 50%, rgb(89, 156, 243) 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1, h2{
+    text-align: center;
+}
+.b{
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: darkred;
+}
+nav{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+.email{
+    color: black;
+}
