@@ -1,14 +1,8 @@
 body{
-    background-image: linear-gradient(to bottom, white 0%, lightblue 50%, rgb(89, 156, 243) 80%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color:  rgba(89, 156, 243, 0.582);
 }
 h1, h2{
     text-align: center;
-}
-.b{
-    text-decoration: none;
-    color: black;
 }
 a{
     color: darkred;
@@ -21,4 +15,7 @@ footer{
 }
 .email{
     color: black;
+}
+small{
+
 }
