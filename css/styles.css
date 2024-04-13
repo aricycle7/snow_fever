@@ -1,21 +1,13 @@
 body{
     background-color:  rgba(89, 156, 243, 0.582);
 }
-h1, h2{
+.nav{
     text-align: center;
 }
-a{
-    color: darkred;
-}
-nav{
+.footer{
     text-align: center;
 }
-footer{
-    text-align: center;
-}
-.email{
-    color: black;
-}
+
 small{
 
 }
