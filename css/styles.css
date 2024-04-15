@@ -1,5 +1,6 @@
 body{
     background-color:  rgba(89, 156, 243, 0.582);
+    font-family: "Oxygen", sans-serif;
 }
 .nav{
     text-align: center;
@@ -34,6 +35,6 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
-#main{
-
+#span{
+    font-weight: 500;
 }
