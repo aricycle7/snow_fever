@@ -38,3 +38,19 @@ body{
 #span{
     font-weight: 500;
 }
+.dif{
+    color: aliceblue;
+    /* text-shadow: 0 0 10px black; */
+    font-size: xx-large;
+    -webkit-text-stroke: 1px black;
+}
+.dif + h3{
+    font-size: x-large;
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 0 10px black;
+}
+hr{
+    height: 3px;
+    background-color: black;
+    margin: 50px 0 50px 0;
+}
