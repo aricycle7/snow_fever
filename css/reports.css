@@ -1,0 +1,43 @@
+body{
+    background-color:  rgba(89, 156, 243, 0.582);
+    font-family: "Oxygen", sans-serif;
+}
+.nav{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: rgb(126, 187, 236);
+}
+.nav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+.nav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#span{
+    font-weight: 500;
+}
+.forecast{
+    margin-top: 100px;
+}
