@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snow Fever Ski</title>    
+    <title>Snow Fever Ski</title>
+    <!-- font awesome links -->
     <script src="https://kit.fontawesome.com/d49d0c51e8.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../res/steal5.png"></i>
+    <!-- Stylesheet links -->
     <link rel="stylesheet" href="../css/reports.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- google api links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="sideNav" class="nav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -24,22 +29,60 @@
     <span onclick="openNav()"><i class="fa-solid fa-bars fa-2xl"></i></span>
     <div id="main">
         <div class="header">
-            <h2>Weather Forecast For Breckenridge, Co</h2>
-            <p>Here are the Current weather reports for Breckenridge Ski Resort</p>
+            <div class="dif">
+                <h2>Weather Forecast For Breckenridge, Co</h2>
+                <h3>Here are the Current weather reports for Breckenridge Ski Resort</h3>
+            </div>
         </div>
+        <hr>
         <div class="forecast">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/39d48n106d04/breckenridge/?unit=us" data-label_1="BRECKENRIDGE" data-label_2="WEATHER" data-icons="Climacons" data-theme="original" >BRECKENRIDGE WEATHER</a>
+            <div class="widget">
+                <h2 class="h2_border">Current Forecast at Breckenridge</h2>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/39d48n106d04/breckenridge/?unit=us"
+                    data-label_1="BRECKENRIDGE" data-label_2="WEATHER" data-icons="Climacons"
+                    data-theme="original">BRECKENRIDGE WEATHER</a>
                 <script>
-                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'weatherwidget-io-js');
                 </script>
+            </div>
+            <div class="hist_img">
+                <h2 class="h2_border">Historical Weather Averages in Breckenridge, Colorado</h2>
+                <img class="weather_img" src="../res/Average High and Low Temperature in Breckenridge.png"
+                    alt="graph showing historical data for Breckenridge, Colorado">
+            </div>
         </div>
     </div>
+    <!-- we can copy and paste this to the other pages easily -->
     <div class="footer">
-<!--     <a href="https://api.weather.gov/points/39.4783,-106.0723">sdebfhjasdvfjvasdhjfasdhjvfhjusd</a>
- -->    </div>
+        <div class="sitemap">
+            <ul>
+                <li>
+                    <p>Ski Fever</p>
+                </li>
+                <li><a href="../html/index.html">Events</a></li>
+                <li><a href="../html/lessons.html">Lessons</a></li>
+                <li><a href="../html/reports.html">Snow Reports</a></li>
+                <li><a href="../html/employment.html">Employment</a></li>
+                <li><a href="../html/credits.html">Credits</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+
+        </div>
+        <div class="email">
+
+        </div>
+    </div>
 </body>
 <script src="../js/app.js"></script>
-<script src="../js/report.js"></script>
+
 </html>
 
 

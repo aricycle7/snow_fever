@@ -1,17 +1,22 @@
 body {
   background-color: rgba(89, 156, 243, 0.582);
   font-family: "Oxygen", sans-serif;
-  background-image: url(../res/Clouds_and_blue_sky_in_Russia._IMG_109.png);
+  /* background-image: url(../res/Clouds_and_blue_sky_in_Russia._IMG_109.png); */
+  /* idk how this looks - maybe keep the clouds or make them a little bit less opaque */
+  background-image: url(../res/Whiteface_Mountain_Ski_Area_off_the_Gondola_Lift.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
 }
+
 .nav {
   text-align: center;
 }
+
 .footer {
   text-align: center;
 }
+
 .nav {
   height: 100%;
   width: 0;
@@ -24,6 +29,7 @@ body {
   transition: 0.5s;
   background-color: rgb(126, 187, 236);
 }
+
 .nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -32,6 +38,7 @@ body {
   display: block;
   transition: 0.3s;
 }
+
 .nav .closebtn {
   position: absolute;
   top: 0;
@@ -39,51 +46,90 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+
 .dif {
   color: aliceblue;
   font-size: xx-large;
   -webkit-text-stroke: 1px black;
 }
-.dif + h3 {
+
+.dif+h3 {
   font-size: x-large;
   -webkit-text-stroke: 0px;
   text-shadow: 0 0 10px black;
 }
+
 hr {
   height: 3px;
   background-color: black;
   margin: 50px 0 50px 0;
 }
-.card_wrapper{
-    display: grid;
-    grid-template-columns: 3;
+
+.card_wrapper {
+  display: grid;
+  grid-template-columns: 3;
 }
-.card{
-    display: grid;
-    grid-column: 2;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px 20px 10px 20px;
-    margin: 10px 10px 30px 10px;
-    width: auto;
-    text-align: center;
-    transition: all .3s ease-in-out;
-}
-.card, p{
-    width: 700px;
-}
-.card:hover{
-    transform: scale(1.05);
-}
-.img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-#sponsor{
+
+.card {
+  display: grid;
+  grid-column: 2;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 30px 10px;
+  width: auto;
   text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.card,
+p {
+  width: 700px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#sponsor {
+  text-align: center;
+}
+
+.footer {
+  border: 1px solid black;
+  background-color: rgb(126, 187, 236);
+}
+
+.sitemap {
+  text-align: left;
+}
+
+.sitemap>ul>li>p {
+  text-indent: 25px;
+  margin-bottom: 10px;
+}
+
+.sitemap>ul {
+  list-style: none;
+
+
+}
+
+.sitemap>ul>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+.social_media {
+  
 }

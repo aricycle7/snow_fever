@@ -39,5 +39,32 @@ body{
     font-weight: 500;
 }
 .forecast{
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2;
+    margin-top: 50px;
+}
+.weatherwidget-io{
+    display: grid;
+    grid-column: 1;
+    margin-right: 14px;
+}
+.widget{
+    text-align: center;
+    margin-left: 20px;
+}
+.hist_img{
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    text-align: center;
+}
+.weather_img{
+    display: grid;
+    grid-column: 2;
+    width: 50%;
+    margin: auto;
+    margin-right: 300px;
+}
+.h2_border{
+    -webkit-text-stroke: 1px aliceblue;
 }
