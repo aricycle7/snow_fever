@@ -39,9 +39,6 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-#span {
-  font-weight: 500;
-}
 .dif {
   color: aliceblue;
   font-size: xx-large;
@@ -84,5 +81,9 @@ hr {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border: 1px solid black;
     border-radius: 10px;
+}
+#sponsor{
+  text-align: center;
 }
