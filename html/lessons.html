@@ -7,6 +7,7 @@
   <title>Snow Fever Ski</title>
   <link rel="icon" href="../res/steal4.png" />
   <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/lessons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -27,68 +28,90 @@
     <h2 class="dif">Snow Fever Ski and Board School</h2>
     <h3 class="dif">Let it snow, let it snow, let it snow</h3>
     <hr />
-    <div class="card_wrapper">
-      <div class="card">
-        <h2>Children's Lessons</h2>
-        <img class="img" src="../res/germany.jpg" alt="a ski instructor teaching two kids to ski" />
-        <p>
-          Children's full day lessons meet from 10am through 3:30pm and
-          include lift access, rentals (ski or snowboard) and lunch. All
-          children (ages 4-12) are welcome regardless of ability or prior
-          experience. Our expert ski and snowboard instructors provide special
-          care and attention to teach children the correct way to ski and
-          ride, from basics of carving turns to safety instruction to advanced
-          lessons and multi-week programs. We focus on having fun in a safe
-          and responsible way!
-        </p>
-      </div>
-      <div class="card">
-        <h2>Adult Lessons</h2>
-        <!-- <img class="img" src="../res/ski.jpg" alt="skiers skiing skielly"> -->
-        <p>
-          Adult full day lessons from 9am through 3pm include lift access,
-          rentals (ski or snowboard) and lunch. Adults are divided by ability
-          and experience. We have expert instructors for all levels!
-        </p>
-      </div>
-      <div class="card">
-        <h2>Terrain Park Lessons</h2>
+    <div class="slideshow_container">
+      <div class="card_wrapper">
+        <div class="card fade">
+          <h2>Heads Up!</h2>
+          <i class="fa-solid fa-circle-info fa-2xl"></i>
+          <p>
+            Unfortunatly lessons are now closed as of March 1st. <br>
+            The season pass will go on sale for $750 on September 1st. <br>
+            The daily pass will be $50 (Including Ski Lift tickets) starting next year.
+          </p>
+        </div>
+        <div class="card fade">
+          <h2>Children's Lessons</h2>
+          <img class="img" src="../res/germany.jpg" alt="a ski instructor teaching two kids to ski" />
+          <p>
+            Children's full day lessons meet from 10am through 3:30pm and
+            include lift access, rentals (ski or snowboard) and lunch. All
+            children (ages 4-12) are welcome regardless of ability or prior
+            experience. Our expert ski and snowboard instructors provide special
+            care and attention to teach children the correct way to ski and
+            ride, from basics of carving turns to safety instruction to advanced
+            lessons and multi-week programs. We focus on having fun in a safe
+            and responsible way!
+          </p>
+        </div>
+        <div class="card fade">
+          <h2>Adult Lessons</h2>
+          <p>
+            Adult full day lessons from 9am through 3pm include lift access,
+            rentals (ski or snowboard) and lunch. Adults are divided by ability
+            and experience. We have expert instructors for all levels!
+          </p>
+        </div>
+        <div class="card fade">
+          <h2>Terrain Park Lessons</h2>
 
-        <p>
-          Our terrain park lessons meet from 12:30pm to 4pm at the base of the
-          Powder Keg Terrain Park and include lift access, rentals (ski or
-          snowboard), and an afternoon snack. We start with the basics and
-          progress through all skill levels. Learn how to ride the rails, half
-          pipe, and jumps. Must be 13 years old. Our proven techniques will
-          teach you how to maneuver through any terrain park in a fun and safe
-          way!
-        </p>
+          <p>
+            Our terrain park lessons meet from 12:30pm to 4pm at the base of the
+            Powder Keg Terrain Park and include lift access, rentals (ski or
+            snowboard), and an afternoon snack. We start with the basics and
+            progress through all skill levels. Learn how to ride the rails, half
+            pipe, and jumps. Must be 13 years old. Our proven techniques will
+            teach you how to maneuver through any terrain park in a fun and safe
+            way!
+          </p>
+        </div>
+        <div class="card fade">
+          <h2>Cost</h2>
+          <p>
+            All of our lessons are $100/day. If you prepay for three full days
+            you will receive a free season pass to keep practicing your skiing
+            or snowboarding skills for the rest of the season!
+          </p>
+        </div>
+        <div class="card fade">
+          <h2>Registration</h2>
+          <img class="img" src="../res/skii2.png" alt="skiers skiing skielly" />
+          <p>
+            Call or email our Ski School Manager: Kent Hoiberg<br />
+            1001 West Main Street<br />
+            Breckenridge, Colorado 80425<br />
+            <a href="1-800-555-4SKI">1-800-555-4SKI</a>
+            <a href="mailto: Kent@bananarama.com">Write to Kent</a>
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h2>Cost</h2>
-        <p>
-          All of our lessons are $100/day. If you prepay for three full days
-          you will receive a free season pass to keep practicing your skiing
-          or snowboarding skills for the rest of the season!
-        </p>
-      </div>
-      <div class="card">
-        <h2>Registration</h2>
-        <img class="img" src="../res/skii2.png" alt="skiers skiing skielly" />
-        <p>
-          Call or email our Ski School Manager: Kent Hoiberg<br />
-          1001 West Main Street<br />
-          Breckenridge, Colorado 80425<br />
-          <a href="1-800-555-4SKI">1-800-555-4SKI</a>
-          <a href="mailto: Kent@bananarama.com">Write to Kent</a>
-        </p>
-      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <br>
     <h2 id="sponsor">Visit Our Sponsor Here: <a href="#">snow.com</a></h2>
   </div>
   <div class="footer"></div>
 </body>
 <script src="../js/app.js"></script>
+<script src="../js/lessons.js"></script>
 
 </html>
 

@@ -50,7 +50,6 @@ body{
 }
 .widget{
     text-align: center;
-    margin-left: 20px;
 }
 .hist_img{
     display: flex;
@@ -63,7 +62,6 @@ body{
     grid-column: 2;
     width: 50%;
     margin: auto;
-    margin-right: 300px;
 }
 .h2_border{
     -webkit-text-stroke: 1px aliceblue;
