@@ -23,10 +23,13 @@
     </div>
     <span onclick="openNav()"><i class="fa-solid fa-bars fa-2xl"></i></span>
     <div id="main">
-        <h2 class="message"></h2>
+        <h2 id="message"></h2>
         <h2 class="dif">Snow Fever Ski and Board School</h2>
         <h3 class="dif">Let it snow, let it snow, let it snow</h3>
         <hr>
+        <label for="name">Choose Getaway Here:</label>
+        <input type="text" id="txt_input" name="getawayName">
+        <input id="input" type="submit" value="submit" onclick="history.go(0);" >
         <div class="card">
         <div id="retreat"></div>
         <div id="image"></div>
