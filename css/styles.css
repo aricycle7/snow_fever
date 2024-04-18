@@ -1,8 +1,6 @@
 body {
   background-color: rgba(89, 156, 243, 0.582);
   font-family: "Oxygen", sans-serif;
-  /* background-image: url(../res/Clouds_and_blue_sky_in_Russia._IMG_109.png); */
-  /* idk how this looks - maybe keep the clouds or make them a little bit less opaque */
   background-image: url(../res/Whiteface_Mountain_Ski_Area_off_the_Gondola_Lift.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
