@@ -1,7 +1,6 @@
 let msg = "Enjoy your time at our luxorious, and scenic retreats!";
 let el = document.getElementById("message");
 
-
 function updateMessage(element, messageString) {
   element.textContent = messageString;
 }
@@ -23,7 +22,7 @@ let retreat2 = {
 };
 
 let cost1 = retreat1.cost * document.getElementById("day_input").value;
-let cost2 = retreat2.cost * document.getElementById('day_input').value;
+let cost2 = retreat2.cost * document.getElementById("day_input").value;
 
 const months = [
   "January",
@@ -39,24 +38,24 @@ const months = [
   "November",
   "December",
 ];
-let monthName = months[new Date('April 1, 24 00:20:18').getMonth()];
+let monthName = months[new Date("April 1, 69 00:20:18").getMonth()];
 console.log(monthName);
 
 if (monthName == "April") {
-  cost1 = (retreat1.cost * document.getElementById("day_input").value) * 0.80; 
-  cost2 = (retreat2.cost * document.getElementById('day_input').value) * 0.80;
-} else if (monthName == "May") {
-  cost1 = (retreat1.cost * document.getElementById("day_input").value) * 0.90; 
-  cost2 = (retreat2.cost * document.getElementById('day_input').value) * 0.90;
+  cost1 = retreat1.cost * document.getElementById("day_input").value * 0.8;
+  cost2 = retreat2.cost * document.getElementById("day_input").value * 0.8;
+} 
+else if (monthName == "May") {
+  cost1 = retreat1.cost * document.getElementById("day_input").value * 0.9;
+  cost2 = retreat2.cost * document.getElementById("day_input").value * 0.9;
+} 
+else {
+  cost1 = retreat1.cost * document.getElementById("day_input").value;
+  cost2 = retreat2.cost * document.getElementById("day_input").value;
 }
-else{
-   cost1 = retreat1.cost * document.getElementById("day_input").value;
-   cost2 = retreat2.cost * document.getElementById('day_input').value;
-}
-console.log(cost1)
 
 
-if (document.getElementById('txt_input').value == "mountain retreat") {
+if (document.getElementById("txt_input").value == "mountain retreat") {
   let elName = document.getElementById("retreat");
   elName.innerText = retreat1.name;
   let elImage = document.getElementById("image");
@@ -70,24 +69,24 @@ if (document.getElementById('txt_input').value == "mountain retreat") {
   el3.innerText = "Number of Tents: " + retreat1.tents;
   let el4 = document.getElementById("cost");
   el4.innerText = "Cost per night: " + "$" + retreat1.cost;
-  let el5 = document.getElementById('total');
+  let el5 = document.getElementById("total");
   el5.innerText = "Cost For Stay: " + "$" + cost1;
 }
 
-if (document.getElementById('txt_input').value == "trail getaway") {
-  let elName = document.getElementById('retreat');
+if (document.getElementById("txt_input").value == "trail getaway") {
+  let elName = document.getElementById("retreat");
   elName.innerText = retreat2.name;
-  let elImage = document.getElementById('image');
+  let elImage = document.getElementById("image");
   elImage.innerHTML =
     '<img src="../res/Camping_Tents_in_the_Woods.jpg" width = 500px>';
-  let el1 = document.getElementById('rooms');
+  let el1 = document.getElementById("rooms");
   el1.innerText = "Number of rooms: " + retreat2.rooms;
-  let el2 = document.getElementById('scenery');
+  let el2 = document.getElementById("scenery");
   el2.innerText = "Scenery: " + retreat2.scenery;
-  let el3 = document.getElementById('tents');
+  let el3 = document.getElementById("tents");
   el3.innerText = "Number of Tents: " + retreat2.tents;
-  let el4 = document.getElementById('cost');
+  let el4 = document.getElementById("cost");
   el4.innerText = "Cost per night: " + "$" + retreat2.cost;
-  let el5 = document.getElementById('total');
+  let el5 = document.getElementById("total");
   el5.innerText = "Cost For Stay: " + "$" + cost2;
 }
