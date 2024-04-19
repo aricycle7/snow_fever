@@ -1,6 +1,7 @@
 let msg = "Enjoy your time at our luxorious, and scenic retreats!";
 let el = document.getElementById("message");
 
+
 function updateMessage(element, messageString) {
   element.textContent = messageString;
 }
@@ -21,6 +22,9 @@ let retreat2 = {
   cost: 40,
 };
 
+let cost1 = retreat1.cost * document.getElementById("day_value".value);
+let cost2 = retreat2.cost * 50;
+
 if(document.getElementById('txt_input').value == "mountain retreat"){
     let elName = document.getElementById("retreat");
 elName.innerText = retreat1.name;
@@ -35,6 +39,8 @@ let el3 = document.getElementById("tents");
 el3.innerText = "Number of Tents: " + retreat1.tents;
 let el4 = document.getElementById("cost");
 el4.innerText = "Cost per night: " + "$" + retreat1.cost;
+let el5 = document.getElementById('total');
+el5.innerText = "Cost For Stay: " + "$" + cost1;
 }
 
 if(document.getElementById('txt_input').value == "trail getaway"){
@@ -43,6 +49,7 @@ elName.innerText = retreat2.name;
 let elImage = document.getElementById('image');
 elImage.innerHTML =
   '<img src="../res/Camping_Tents_in_the_Woods.jpg" width = 500px>';
+  let el1 = document.getElementById('rooms');
 el1.innerText = "Number of rooms: " + retreat2.rooms;
 let el2 = document.getElementById('scenery');
 el2.innerText = "Scenery: " + retreat2.scenery;
